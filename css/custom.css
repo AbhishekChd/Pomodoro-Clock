@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
+body{
+   background-color: #e8e8e8;
+
+}
+main{
+    height: 100vh;
+}
+#hero-text{
+    font-size:400%;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-active{
+    background-color: #31b0d5;
+    color: #fff;
+}
+.btn-de-active{
+    font-size: 115% !important;
+    
+}
+.input-group{
+    width: 40%;
+    margin: 0 1%;
+}
+input{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 200% !important;
+}
+#time-adjustment-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content:space-around;
+    justify-content: center;
+    
+}
+#timer{
+    margin-top: 2% !important;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    color: #222;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 400%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    background-color: #e08326;
+    z-index: -1;
+}
+#credits{
+    z-index: +1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #24292e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2% 0;
+}
+.social{
+    padding: 3px 6px;
+    border-radius: 10%;
+}
+@media only screen and (max-width: 768px){
+    #time-adjustment-section{
+        flex-direction: column;
+    }
+    .input-group{
+        width: 100%;
+        margin: 0;
+    }
+    #credits{
+        flex-direction: column;
+    }
+    main{
+        height: 120vh;
+    }
+}

@@ -1,9 +1,54 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>Pomodoro Clock</title>
+        <link type="text/css" rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
     <body>
+        
+        
+        
+        <main>
+            <span id="hero-text">Pomodoro Clock</span>
+            <!----------TIME ADJUSTMENT SECTION----------->
+            <div class="container-fluid" id="time-adjustment-section">
+
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-addon btn btn-active"><i class="fa fa-minus"></i></div>
+                        <input type="text " class="form-control" placeholder="00"  readonly>
+                        <div class="input-group-addon btn btn-de-active">Session</div>
+                        <div class="input-group-addon btn-active"><i class="fa fa-plus"></i></div>
+                    </div>
+
+
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-addon btn-active"><i class="fa fa-minus"></i></div>
+                        <input type="text " class="form-control" placeholder="00" readonly>
+                        <div class="input-group-addon btn btn-de-active">&nbsp;&nbsp;Break&nbsp;</div>
+                        <div class="input-group-addon btn-active"><i class="fa fa-plus"></i></div>
+                    </div>
+
+            </div>
+            <!--========================================-->
+
+            <!----------CLOCK SECTION----------->
+            <div id="timer">00:00</div>       
+            <!--==============================-->
+        </main>        
+        
+        
+        <footer id="credits">
+            <div> Made with &nbsp;<i class="fa fa-heart fa-lg" style="color:#EA4335;"></i>&nbsp; by <a href="https://abhishekchd.github.io" target="_blank">&nbsp;Abhishek Chaudhary</a>&nbsp;</div>
+            <div style="display:flex;flex-direction:row;align-items:center">| Find me on&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/AbhishekChd" target="_blank" style="text-decoration:none;"><i class="fa fa-github fa-3x social" style="background-color:#fff;color:#24292e;"></i></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/abhishek-chd" target="_blank"  style="text-decoration:none;"><i class="fa fa-linkedin fa-3x social" style="background-color:#0077b5;color:#fff"></i></a></div>
+            
+        </footer>
+        
     </body>
 </html>
