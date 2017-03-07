@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
 body{
    background-color: #e8e8e8;
+
+}
+main{
+    height: 100vh;
 }
 #hero-text{
     font-size:400%;
@@ -8,7 +12,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 1%;
 }
 .btn-active{
     background-color: #31b0d5;
@@ -16,17 +19,24 @@ body{
 }
 .btn-de-active{
     font-size: 115% !important;
-    padding:1.9% !important;
+    
 }
 .input-group{
-    float:left !important;
-    margin-bottom: 1%;
+    width: 40%;
+    margin: 0 1%;
 }
 input{
     font-family: 'Roboto Mono', monospace;
     font-size: 200% !important;
 }
-
+#time-adjustment-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content:space-around;
+    justify-content: center;
+    
+}
 #timer{
     margin-top: 2% !important;
     margin: auto;
@@ -41,9 +51,11 @@ input{
     justify-content: center;
     align-items:center;
     background-color: #e08326;
+    z-index: -1;
 }
 #credits{
-    position: absolute;
+    z-index: +1;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #24292e;
@@ -57,4 +69,19 @@ input{
 .social{
     padding: 3px 6px;
     border-radius: 10%;
+}
+@media only screen and (max-width: 768px){
+    #time-adjustment-section{
+        flex-direction: column;
+    }
+    .input-group{
+        width: 100%;
+        margin: 0;
+    }
+    #credits{
+        flex-direction: column;
+    }
+    main{
+        height: 120vh;
+    }
 }
