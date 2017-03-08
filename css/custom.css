@@ -14,16 +14,17 @@ main{
     justify-content: center;
 }
 .btn-active{
-    background-color: #31b0d5;
+    background-color: #e16537;
     color: #fff;
 }
 .btn-de-active{
-    font-size: 115% !important;
+    font-size: 130% !important;
     
 }
-.input-group{
-    width: 40%;
+.input-group2{
+    width: 32%;
     margin: 0 1%;
+    min-width: 250px;
 }
 input{
     font-family: 'Roboto Mono', monospace;
@@ -50,8 +51,8 @@ input{
     flex-direction: row;
     justify-content: center;
     align-items:center;
-    background-color: #e08326;
     z-index: -1;
+    border : 3px solid #000;
 }
 #credits{
     z-index: +1;
