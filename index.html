@@ -1,60 +1,52 @@
-<!DOCTYPE html>
-
+    <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Pomodoro Clock</title>
-        <link type="text/css" rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
-        <link type="text/css" rel="stylesheet" href="css/custom.css">
-        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link type="text/css" rel="stylesheet" href="/css/custom.css">
+        <link type="text/css" rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+        <script src="js/custom.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        
-        
-        
         <main>
-            <span id="hero-text">Pomodoro Clock</span>
-            <!----------TIME ADJUSTMENT SECTION----------->
-            <div class="container-fluid" id="time-adjustment-section">                    
-                <div class="input-group2">
-                    <div class="text-center btn-de-active">Session</div>
-                        <div class="input-group input-group-lg">
-                        <div class="input-group-addon btn btn btn-active"><i class="fa fa-minus"></i></div>
-                        <input type="text " class="form-control" placeholder="00"  readonly>
-                        
-                        <div class="input-group-addon btn btn-active"><i class="fa fa-plus"></i></div>
-                    </div>
+            <div class = "hero-text">
+            Pomodoro clock
+        </div>
+        <div class="main-container">
+            <div class="timer">
+                <div class="timer-container">
+                    <div class="clock-text">Break length</div>
+                    <div class="button-container">
+                        <div id="decrease-break" class="buttons" onclick="toggleLength('break','-')"><i class="fa fa-minus fa-lg" aria-hidden="true"></i></div>
+                        <div  id="break-length" class="timer-text">2</div>
+                        <div id="increase-break" class="buttons"  onclick="toggleLength('break','+')"><i class="fa fa-plus fa-lg"></i></div>
+                    </div>                    
                 </div>
-                
-                <div class="input-group2">
-                    <div class="text-center btn-de-active">&nbsp;&nbsp;Break&nbsp;</div>
-                    <div class="input-group input-group-lg">
-                        
-                        <div class="input-group-addon btn btn-active"><i class="fa fa-minus"></i></div>
-                        <input type="text " class="form-control" placeholder="00" readonly>
-                        
-                        <div class="input-group-addon btn btn-active"><i class="fa fa-plus"></i></div>
-                    </div>
-
+                <div class="timer-container">
+                    <div class="clock-text">Session  length</div>
+                    <div class="button-container">
+                        <div id="decrease-session" class="buttons"  onclick="toggleLength('session','-')"><i class="fa fa-minus fa-lg" aria-hidden="true"></i></div>
+                        <div id="session-length" class="timer-text">25</div>
+                        <div id="increase-session" class="buttons"  onclick="toggleLength('session','+')"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></div>
+                    </div>                    
                 </div>
-                    
             </div>
-            <!--========================================-->
+            <div  class="clock" >
+                <div id="clock" onclick="start()">25:00</div>
+                <div id="status">Start</div>
+            </div>
+            
+        </div>
 
-            <!----------CLOCK SECTION----------->
-            <div id="timer">00:00</div>       
-            <!--==============================-->
-        </main>        
+        </main>
         
-        
-        <footer id="credits">
-            <div> Made with &nbsp;<i class="fa fa-heart fa-lg" style="color:#EA4335;"></i>&nbsp; by <a href="https://abhishekchd.github.io" target="_blank">&nbsp;Abhishek Chaudhary</a>&nbsp;</div>
+                <footer id="credits">
+            <div> Made with &nbsp;<i class="fa fa-heart fa-lg" style="color:#EA4335;"></i>&nbsp; by <a href="https://abhishekchd.github.io" target="_blank" class="link">&nbsp;Abhishek Chaudhary</a>&nbsp;</div>
             <div style="display:flex;flex-direction:row;align-items:center">| Find me on&nbsp;&nbsp;&nbsp;
             <a href="https://github.com/AbhishekChd" target="_blank" style="text-decoration:none;"><i class="fa fa-github fa-3x social" style="background-color:#fff;color:#24292e;"></i></a>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.linkedin.com/in/abhishek-chd" target="_blank"  style="text-decoration:none;"><i class="fa fa-linkedin fa-3x social" style="background-color:#0077b5;color:#fff"></i></a></div>
             
         </footer>
-        
     </body>
 </html>
